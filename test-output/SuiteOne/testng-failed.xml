@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOne]">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="test.TestngEdge">
+        <methods>
+          <include name="aftr"/>
+          <include name="med1"/>
+          <include name="bfrclass"/>
+          <include name="bftTest"/>
+          <include name="aftClass"/>
+          <include name="afteSuit"/>
+          <include name="bfr"/>
+        </methods>
+      </class> <!-- test.TestngEdge -->
+      <class name="test.TestNgRun">
+        <methods>
+          <include name="user"/>
+          <include name="aftr"/>
+          <include name="bfrsui"/>
+          <include name="aftTest"/>
+          <include name="bfrclass"/>
+          <include name="aftClass"/>
+          <include name="bfr"/>
+        </methods>
+      </class> <!-- test.TestNgRun -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [SuiteOne] -->
