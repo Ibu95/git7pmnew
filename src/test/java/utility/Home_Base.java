@@ -27,6 +27,10 @@ public class Home_Base {
 
 	public static WebDriver driver;
 
+	public static void newmtd() {
+		System.out.println("Adding few Changes");
+	}
+
 	public static void launch(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -108,8 +112,8 @@ public class Home_Base {
 	}
 
 	public static String getData(Sheet sheet, int row, int cell) {
-		
-		String value ="";
+
+		String value = "";
 		Row r = sheet.getRow(row);
 		Cell c = r.getCell(cell);
 
@@ -121,9 +125,9 @@ public class Home_Base {
 
 		case NUMERIC:
 			if (DateUtil.isCellDateFormatted(c)) {
-				value= new SimpleDateFormat("dd-MM-yyyy").format(c.getDateCellValue());
+				value = new SimpleDateFormat("dd-MM-yyyy").format(c.getDateCellValue());
 			} else {
-				value = String.valueOf((long)c.getNumericCellValue());
+				value = String.valueOf((long) c.getNumericCellValue());
 			}
 
 			break;
