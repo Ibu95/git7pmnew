@@ -19,4 +19,17 @@ public class FbRunner {
 	private void add() {
 		System.out.println("Changes in Runnerclass");
 	}
+	private void addnew() {
+		System.out.println("Changes in Runnerclass By shivin");
+		
+		
+		
+		
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j <5; j++) {
+				
+			}
+		}
+	}
+
 }
