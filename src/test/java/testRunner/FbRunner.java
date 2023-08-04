@@ -16,4 +16,16 @@ import io.cucumber.junit.CucumberOptions;
                     		"junit:CucmberReports/cucmjunit.xml", 
                     		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 public class FbRunner {
+	private void addnew() {
+		System.out.println("Changes in Runnerclass By shivin");
+		
+		
+		
+		
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j <5; j++) {
+				
+			}
+		}
+	}
 }
